@@ -1,5 +1,9 @@
 # V-Emoji-Picker
+Base on [joaoeudes7's V-Emoji-Picker](https://github.com/joaoeudes7/V-Emoji-Picker) , add sticker support，增加动态表情支持。
+---
 This simple package using Emojis Natives
+
+Support sticker，支持动态表情
 
 [![npm](https://img.shields.io/npm/v/v-emoji-picker.svg?style=flat-square)](https://www.npmjs.com/package/v-emoji-picker)
 [![bundlephobia](https://img.shields.io/bundlephobia/minzip/v-emoji-picker.svg?style=flat-square)](https://bundlephobia.com/result?p=v-emoji-picker@latest)
@@ -7,6 +11,7 @@ This simple package using Emojis Natives
 [![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg?style=flat-square)](https://vuejs.org/)
 [![CodeFactor](https://www.codefactor.io/repository/github/joaoeudes7/v-emoji-picker/badge?style=flat-square)](https://www.codefactor.io/repository/github/joaoeudes7/v-emoji-picker)
 ![example: Android](.demo.png)
+![img.png](sticker.png)
 
 ---
 ## Contents
@@ -46,6 +51,11 @@ export default {
   },
   data: () => ({}),
   methods: {
+    /**
+     *
+     * 动态表情时，emoji.data为http开头的url
+     * @param emoji
+     */
     selectEmoji(emoji) {
       console.log(emoji)
     }
@@ -103,7 +113,13 @@ Array of items with `Interface IEmoji`
 
 ```js
 interface IEmoji {
+    /**
+     * 动态表情时，约定以http开头，表示动态表情图片的链接地址
+     */
   data: string;
+    /**
+     * 动态表情时，约定以Sticker-开头
+     */
   category: string;
   aliases: string[];
 }
@@ -116,6 +132,9 @@ Array of items with `Interface ICategory`
 
 ```js
 interface ICategory {
+    /**
+     * 动态表情时，约定以Sticker-开头
+     */
   name: string;
   icon: string;
 }

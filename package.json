@@ -1,10 +1,10 @@
 {
-  "name": "v-emoji-picker",
+  "name": "@imndx/v-emoji-picker",
   "version": "2.3.1",
   "author": {
-    "name": "João Eudes Lima",
-    "email": "joaoeudes7@gmail.com",
-    "url": "https://github.com/joaoeudes7"
+    "name": "imndx",
+    "email": "imndxxgmail.com",
+    "url": "https://github.com/imndx"
   },
   "scripts": {
     "serve": "vue-cli-service serve --open",
@@ -69,13 +69,12 @@
     "last 2 versions",
     "not ie <= 8"
   ],
-  "homepage": "https://github.com/joaoeudes7/V-Emoji-Picker#readme",
+  "homepage": "https://github.com/imndx/V-Emoji-Picker#readme",
   "keywords": [
-    "javascript",
-    "vue",
+    "sticker",
     "emoji",
     "unicode"
   ],
   "license": "MIT",
-  "repository": "https://github.com/joaoeudes7/V-Emoji-Picker"
+  "repository": "https://github.com/imndx/V-Emoji-Picker"
 }
