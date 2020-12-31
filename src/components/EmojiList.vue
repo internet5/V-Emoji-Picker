@@ -17,7 +17,7 @@
         </div>
       </template>
       <template v-else>
-        <div class="grid-emojis" :style="gridDynamic">
+        <div v-if="category.indexOf('Sticker-') === -1" class="grid-emojis" :style="gridDynamic">
           <EmojiItem
             v-for="(emoji, index) in dataFiltered"
             :key="index"
@@ -25,6 +25,16 @@
             :size="emojiSize"
             :withBorder="emojiWithBorder"
             @click.native="onSelect(emoji)"
+          />
+        </div>
+        <div v-else class="grid-emojis" :style="stickerGridDynamic">
+          <StickerItem
+              v-for="(emoji, index) in dataFiltered"
+              :key="index"
+              :emoji="emoji"
+              :size="stickerSize"
+              :withBorder="emojiWithBorder"
+              @click.native="onSelect(emoji)"
           />
         </div>
       </template>
@@ -38,9 +48,11 @@ import { Emoji } from "@/models/Emoji";
 
 import EmojiItem from "./EmojiItem.vue";
 import CategoryLabel from "./CategoryLabel.vue";
+import StickerItem from "@/components/StickerItem.vue";
 
 @Component({
   components: {
+    StickerItem,
     EmojiItem,
     CategoryLabel
   }
@@ -48,8 +60,10 @@ import CategoryLabel from "./CategoryLabel.vue";
 export default class EmojiList extends Vue {
   @Prop({ required: true }) data!: any;
   @Prop({ required: true }) emojisByRow!: number;
+  @Prop({ required: true }) stickersByRow!: number;
   @Prop({}) emojiWithBorder!: boolean;
   @Prop({}) emojiSize!: number;
+  @Prop({}) stickerSize!: number;
   @Prop({}) filter!: string;
   @Prop({}) continuousList!: boolean;
   @Prop({}) category!: string;
@@ -69,6 +83,13 @@ export default class EmojiList extends Vue {
     const percent = 100 / this.emojisByRow;
     return {
       gridTemplateColumns: `repeat(${this.emojisByRow}, ${percent}%)`
+    };
+  }
+
+  get stickerGridDynamic() {
+    const percent = 100 / this.stickersByRow;
+    return {
+      gridTemplateColumns: `repeat(${this.stickersByRow}, ${percent}%)`
     };
   }
 

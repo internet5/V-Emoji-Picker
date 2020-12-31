@@ -57,7 +57,40 @@ const icons = {
       xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 511.626 511.626" fill="gray">
       <path d="M475.366 71.949c-24.175-23.606-57.575-35.404-100.215-35.404-11.8 0-23.843 2.046-36.117 6.136-12.279 4.093-23.702 9.615-34.256 16.562-10.568 6.945-19.65 13.467-27.269 19.556a263.828 263.828 0 0 0-21.696 19.414 264.184 264.184 0 0 0-21.698-19.414c-7.616-6.089-16.702-12.607-27.268-19.556-10.564-6.95-21.985-12.468-34.261-16.562-12.275-4.089-24.316-6.136-36.116-6.136-42.637 0-76.039 11.801-100.211 35.404C12.087 95.55 0 128.286 0 170.16c0 12.753 2.24 25.891 6.711 39.398 4.471 13.514 9.566 25.031 15.275 34.546 5.708 9.514 12.181 18.792 19.414 27.834 7.233 9.041 12.519 15.272 15.846 18.698 3.33 3.426 5.948 5.903 7.851 7.427L243.25 469.938c3.427 3.426 7.614 5.144 12.562 5.144s9.138-1.718 12.563-5.144l177.87-171.31c43.588-43.58 65.38-86.406 65.38-128.472.001-41.877-12.085-74.61-36.259-98.207zm-53.961 199.846L255.813 431.391 89.938 271.507C54.344 235.922 36.55 202.133 36.55 170.156c0-15.415 2.046-29.026 6.136-40.824 4.093-11.8 9.327-21.177 15.703-28.124 6.377-6.949 14.132-12.607 23.268-16.988 9.141-4.377 18.086-7.328 26.84-8.85 8.754-1.52 18.079-2.281 27.978-2.281 9.896 0 20.557 2.424 31.977 7.279 11.418 4.853 21.934 10.944 31.545 18.271 9.613 7.332 17.845 14.183 24.7 20.557 6.851 6.38 12.559 12.229 17.128 17.559 3.424 4.189 8.091 6.283 13.989 6.283 5.9 0 10.562-2.094 13.99-6.283 4.568-5.33 10.28-11.182 17.131-17.559 6.852-6.374 15.085-13.222 24.694-20.557 9.613-7.327 20.129-13.418 31.553-18.271 11.416-4.854 22.08-7.279 31.977-7.279s19.219.761 27.977 2.281c8.757 1.521 17.702 4.473 26.84 8.85 9.137 4.38 16.892 10.042 23.267 16.988 6.376 6.947 11.612 16.324 15.705 28.124 4.086 11.798 6.132 25.409 6.132 40.824-.002 31.977-17.89 65.86-53.675 101.639z"/>
     </svg>
-    `
+    `,
+  testSticker:`
+      <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="18px" viewBox="0 0 24 18" enable-background="new 0 0 24 18" xml:space="preserve">  <image id="image0" width="24" height="18" x="0" y="0"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAASCAMAAAB2Mu6sAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+    AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAC91BMVEX////+/v79/fz4/f/z
+    +P/z9//2+//+/////v39/f3m6vDJwbfAqYnDo3PIoWjIoWbFom7Apn/Et6bb2979///w9fq5rJy/
+    kE3kpD73tUX5uUr9wE3+wU76vEv0tEXqqD/Jk0OzmXjb3eH+/f3i5uqti2Pjmzb/vU3qtFLmtlb/
+    0GL6zGH4zGH+zmL/z2Lzvlj/w1T2rj+4hELHw8H+/v/r7/OphVj0qDn/yVm7lkdwWy1uWi+bhEP5
+    3Wv222rqzWR+aDVuXC97YDHrt1X/vUu5fzbNzMz+//79/PyxopLllTD8rE32okj0qE7/ymD93Wnf
+    ymT15HH56nTo1WrWv1751WbsuFbyrE/2rE39qz+qhFbx9fn+/v3///7v9PqzhlH/qkD3dTj9YjH9
+    Yy/3nkz24Gz86XP47nn48Hv663b+53H41Gb9gj39Yi/7YjD/jkDMizXMysv8/Pzg5OrAhkT+rkP0
+    r0v4sE/6vFb5z2L12Gn04G736XT363X022z302b6wFn5qk33pEj8rUrdkDTAt6/8/Pvn7PK5g0b/
+    rEPyrUr2vFH5xFj/zVr/01z93Gr33W323W773Wv/2GH/0V37yVr3wVX0tk38sUrYjDLDvbj9/v+w
+    m4Tokiz/sUj2sk/3u1DVrWHNs3fiulr7z1z+0VzpwlzNsXHLqWT0tU/3r0z/qz2zfj/j5+ru8fWz
+    mHnYjjXxnzj+sT/Pn1fDvbevr6mfkGzKtoLQy7na1c7TrnX9s0L5q0HumzS/hD/IxL/6///Sz8zA
+    p4rAlmHVplWOWih8Py9oPDKLXELBiU7Hjz7TmETJlVLAmGbBrpfg4uX///2mn7RxFhm5MielLyHY
+    MCuuEBKIjI/m6Ozo6/H3/f/9/Pv7+vrk2Li6l0GbQiSLIyWXJyioKy1RHBCZnY349/b7/P7WxZHe
+    uyqYTQlyFQB6HwBhEgCafhyskwqtp5va2eKzoZ+ukIKhdmGMVDx/bV7OzMD19fX8///8+/v8+/r9
+    +/v//f2tDaM+AAAAAWJLR0QAiAUdSAAAAAlwSFlzAAAOwwAADsMBx2+oZAAAAAd0SU1FB+QMHwIh
+    JUiUTDYAAAGJSURBVBjTY2BgYGBkYGQCUswsrGzsDAwcnEABMGBk4GRg4OLm4eXjFxAUEhZhYGJg
+    ZISKi4qJS0hKScvIyskrKCqBZEA6lBlUVNXUNTS1tHV09fQNDI2MGUCmmTAqm5qZW1haWdvY2tk7
+    ODo5u7i6AfUwuHsweHp5+/j6+QcEBgWHhIaFR0RGRccAHRQbF5+QmJSckpqWnpGZlZ2Tm5dfUMhQ
+    xMBpUlxSWlZeUVlVXVMbWFff0NjU3NLK2Aa0pb2js6u7p7evf8LESZOnTJ02fcbMWQxACabZc+bO
+    m79g4aLFS5YuW76ie+Wq1WvWMgK9xhizbv2GjZs2b9m6bfuOnbt279m7bz/Iy0DrGQ4cPHT4yNFj
+    x0+cPHX6zNlz58H+AMlcYGA4cPHS5StXr12/cfMWyMuMsaAwYWS8fefuvfsPHj56/ORp7IXbnIxg
+    cZBUzLPnL16+ev3m7bv3jG2M0MAFARNlhg8fP33+8vXbd0ZGdwZkEAMifjBgAEZGzp+/fv+JKWKE
+    GQQAE9KFaqwAUP4AAAAldEVYdGRhdGU6Y3JlYXRlADIwMjAtMTItMzFUMDI6MzM6MzcrMDA6MDC5
+    HMB0AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIwLTEyLTMxVDAyOjMzOjM3KzAwOjAwyEF4yAAAAABJ
+    RU5ErkJggg==" />
+    </svg>
+  
+  `
 };
 
 export const categoriesDefault: ICategory[] = [
@@ -69,5 +102,6 @@ export const categoriesDefault: ICategory[] = [
   new Category("Objects", icons["objects"]),
   new Category("Places", icons["places"]),
   new Category("Symbols", icons["symbols"]),
-  new Category("Flags", icons["flags"])
+  new Category("Flags", icons["flags"]),
+  new Category("Sticker-test", icons["testSticker"])
 ];

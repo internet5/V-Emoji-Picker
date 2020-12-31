@@ -1,4 +1,7 @@
 export interface IEmoji {
+  /**
+   * 动态表情时，data以http开头
+   */
   data: string;
   category: string;
   aliases: string[];

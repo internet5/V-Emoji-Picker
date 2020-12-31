@@ -13,7 +13,9 @@
       :filter="filterEmoji"
       :emojiWithBorder="emojiWithBorder"
       :emojiSize="emojiSize"
+      :stickerSize="stickerSize"
       :emojisByRow="emojisByRow"
+      :stickersByRow="stickersByRow"
       :continuousList="continuousList"
       :hasSearch="showSearch"
       @select="onSelectEmoji"
@@ -49,8 +51,10 @@ export default class VEmojiPicker extends Vue {
   @Prop({ default: () => categoriesDefault }) customCategories!: ICategory[];
   @Prop({ default: 15 }) limitFrequently!: number;
   @Prop({ default: 5 }) emojisByRow!: number;
+  @Prop({ default: 4 }) stickersByRow!: number;
   @Prop({ default: false }) continuousList!: boolean;
   @Prop({ default: 32 }) emojiSize!: number;
+  @Prop({ default: 64 }) stickerSize!: number;
   @Prop({ default: true }) emojiWithBorder!: boolean;
   @Prop({ default: true }) showSearch!: boolean;
   @Prop({ default: true }) showCategories!: boolean;
@@ -99,6 +103,9 @@ export default class VEmojiPicker extends Vue {
   }
 
   async updateFrequently(emoji: IEmoji) {
+    if(emoji.data.startsWith("http")){
+      return;
+    }
     const oldEmojis = this.mapEmojis["Frequently"];
     const emojis = [...new Set([emoji, ...oldEmojis])];
 

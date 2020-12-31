@@ -1426,5 +1426,30 @@ export const emojisDefault: IEmoji[] = [
   new Emoji("🇪🇭", "Flags", ["western_sahara"]),
   new Emoji("🇾🇪", "Flags", ["yemen"]),
   new Emoji("🇿🇲", "Flags", ["zambia"]),
-  new Emoji("🇿🇼", "Flags", ["zimbabwe"])
+  new Emoji("🇿🇼", "Flags", ["zimbabwe"]),
+
+  new Emoji("https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1012472875,3266412152&fm=26&gp=0.jpg", "Sticker-test", ["test"]),
+  new Emoji("https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1310823488,1964514455&fm=26&gp=0.jpg", "Sticker-test", ["test1"]),
+  new Emoji("https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1310823488,1964514455&fm=26&gp=0.jpg", "Sticker-test", ["test1"]),
+  new Emoji("https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1012472875,3266412152&fm=26&gp=0.jpg", "Sticker-test", ["test"]),
+  new Emoji("https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1310823488,1964514455&fm=26&gp=0.jpg", "Sticker-test", ["test1"]),
+  new Emoji("https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1310823488,1964514455&fm=26&gp=0.jpg", "Sticker-test", ["test1"]),
+  new Emoji("https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1012472875,3266412152&fm=26&gp=0.jpg", "Sticker-test", ["test"]),
+  new Emoji("https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1310823488,1964514455&fm=26&gp=0.jpg", "Sticker-test", ["test1"]),
+  new Emoji("https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1310823488,1964514455&fm=26&gp=0.jpg", "Sticker-test", ["test1"]),
+
+  new Emoji("https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1054361837,4247340522&fm=26&gp=0.jpg", "Sticker-test", ["western_sahara"]),
+  new Emoji("https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1796779230,2913471734&fm=26&gp=0.jpg", "Sticker-test", ["yemen"]),
+  new Emoji("https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1845063579,67604683&fm=26&gp=0.jpg", "Sticker-test", ["zambia"]),
+  new Emoji("https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2357113123,3002151857&fm=26&gp=0.jpg", "Sticker-test", ["zimbabwe"]),
+
+  new Emoji("https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1054361837,4247340522&fm=26&gp=0.jpg", "Sticker-test", ["western_sahara"]),
+  new Emoji("https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1796779230,2913471734&fm=26&gp=0.jpg", "Sticker-test", ["yemen"]),
+  new Emoji("https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1845063579,67604683&fm=26&gp=0.jpg", "Sticker-test", ["zambia"]),
+  new Emoji("https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2357113123,3002151857&fm=26&gp=0.jpg", "Sticker-test", ["zimbabwe"]),
+
+  new Emoji("https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1054361837,4247340522&fm=26&gp=0.jpg", "Sticker-test", ["western_sahara"]),
+  new Emoji("https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1796779230,2913471734&fm=26&gp=0.jpg", "Sticker-test", ["yemen"]),
+  new Emoji("https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1845063579,67604683&fm=26&gp=0.jpg", "Sticker-test", ["zambia"]),
+  new Emoji("https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2357113123,3002151857&fm=26&gp=0.jpg", "Sticker-test", ["zimbabwe"]),
 ];

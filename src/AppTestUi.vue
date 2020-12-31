@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <VEmojiPicker :customEmojis="emojis" :continuousList="true" v-if="visible" :dark="true" />
+      <VEmojiPicker :customEmojis="emojis" :customCategories="categories" :continuousList="false" @select="selectEmoji"  v-if="visible" :dark="false" />
     </div>
     <button @click="changeEmojis">Change</button>
     <button @click="changeVisibleEmojis">Toogle View</button>
@@ -11,7 +11,7 @@
 <script lang='ts'>
 import { Component, Vue } from "vue-property-decorator";
 
-import VEmojiPicker, { emojisDefault } from "./index";
+import VEmojiPicker, { emojisDefault, categoriesDefault } from "./index";
 // import { VEmojiPicker, emojisDefault } from "./index";
 
 Vue.use(VEmojiPicker);
@@ -24,6 +24,7 @@ Vue.use(VEmojiPicker);
 })
 export default class AppTestUi extends Vue {
   private emojis = emojisDefault;
+  private categories = categoriesDefault;
 
   private visible = true;
 
@@ -34,6 +35,9 @@ export default class AppTestUi extends Vue {
   changeVisibleEmojis() {
     this.visible = !this.visible;
   }
+selectEmoji(emoji){
+    console.log('select emoji', emoji.data);
+}
 }
 </script>
 
