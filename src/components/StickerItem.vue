@@ -25,7 +25,7 @@ export default class EmojiItem extends Vue {
 </script>
 
 <style lang="scss" scoped>
-.emoji {
+.sticker {
   display: inline-block;
   text-align: center;
   padding: 3px;
