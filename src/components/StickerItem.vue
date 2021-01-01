@@ -8,7 +8,7 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 import { IEmoji } from "@/models/Emoji";
 
 @Component({})
-export default class EmojiItem extends Vue {
+export default class StickerItem extends Vue {
   @Prop({}) emoji!: IEmoji;
   @Prop({}) size!: number;
   @Prop({}) withBorder!: boolean;

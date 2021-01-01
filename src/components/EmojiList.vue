@@ -48,7 +48,7 @@ import { Emoji } from "@/models/Emoji";
 
 import EmojiItem from "./EmojiItem.vue";
 import CategoryLabel from "./CategoryLabel.vue";
-import StickerItem from "@/components/StickerItem.vue";
+import StickerItem from "./StickerItem.vue";
 
 @Component({
   components: {
