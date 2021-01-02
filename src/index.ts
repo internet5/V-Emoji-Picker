@@ -3,6 +3,8 @@ import _VEmojiPicker from './VEmojiPicker.vue';
 
 import { categoriesDefault } from './utils/categories';
 import { emojisDefault } from './utils/emojis';
+import {Emoji} from './models/Emoji';
+import {Category} from "./models/Category";
 
 import locale from './locale';
 
@@ -31,7 +33,9 @@ const plugin: PluginObject<_VEmojiPicker> = {
 export {
   _VEmojiPicker as VEmojiPicker,
   categoriesDefault,
-  emojisDefault
+  emojisDefault,
+  Emoji,
+  Category,
 };
 
 export default plugin;
