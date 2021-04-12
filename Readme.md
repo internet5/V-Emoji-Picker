@@ -171,6 +171,15 @@ const i18n = {
 
 or import from `locale/lang/${youLang}`
 
+# aemoji
+可解决windows 7 表情问题
+
+引入 ```v-emoji-picker```之前前，设置 __aemoji_url__ 作为 emoji.png 的实际路径
+```
+import emojiPath from "aemoji/dist/emoji.png";
+window.__aemoji_url__ = emojiPath;
+```
+
 Obs: Default language is en-UK
 
 # Structure Emoji
