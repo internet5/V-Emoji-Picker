@@ -1,7 +1,9 @@
 # V-Emoji-Picker
 Base on [joaoeudes7's V-Emoji-Picker](https://github.com/joaoeudes7/V-Emoji-Picker) , add sticker support，增加动态表情支持。
 ---
-This simple package using Emojis Natives
+This simple package using ~~Emojis Natives~~
+
+This simple package using twemoji
 
 Support sticker，支持动态表情
 
@@ -139,6 +141,12 @@ interface ICategory {
   icon: string;
 }
 ```
+
+##twemoji
+解决windows 7 表情显示错误问题。
+默认从```https://twemoji.maxcdn.com/v/13.0.2/```加载表情，但是可以通过在使用```v-emoji-picker```之前，
+配置```window.__twemoji_base_url__```指定加载路径，如：```https://static.wildfirechat.net/twemoji/assets/```
+
 
 set in Prop `customCategories`
 

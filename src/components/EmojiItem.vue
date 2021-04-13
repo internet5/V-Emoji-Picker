@@ -1,11 +1,11 @@
-
 <template>
-  <span :class="['emoji', { 'border': withBorder } ]" :style="styleSize" v-html="emoji.data" />
+  <span :class="['emoji-c', { 'border': withBorder } ]" :style="styleSize" v-html="uemoji(emoji.data)"/>
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
-import { IEmoji } from "@/models/Emoji";
+import {Component, Prop, Vue} from "vue-property-decorator";
+import {IEmoji} from "@/models/Emoji";
+import uEmojiParser from 'universal-emoji-parser';
 
 @Component({})
 export default class EmojiItem extends Vue {
@@ -21,12 +21,20 @@ export default class EmojiItem extends Vue {
       width: `${this.size}px`
     };
   }
+
+  uemoji(data) {
+    let tmp = uEmojiParser.parse(data);
+    // window.__twemoji_base_url__ = 'https://static.wildfirechat.net/twemoji/assets/';
+    if(window.hasOwnProperty('__twemoji_base_url__')){
+      tmp = tmp.replace(/src="https:\/\/twemoji\.maxcdn\.com\/v\/[0-9.]+\//g, 'src="' + window.__twemoji_base_url__);
+    }
+    return tmp;
+  }
 }
 </script>
 
 <style lang="scss" scoped>
-.emoji {
-  display: inline-block;
+.emoji-c {
   text-align: center;
   padding: 3px;
   box-sizing: content-box;
@@ -34,9 +42,17 @@ export default class EmojiItem extends Vue {
   transition: transform 0.2s;
 
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.15);
+  }
+
+  ::v-deep img {
+    width: 28px;
+    height: 28px;
   }
 }
 
