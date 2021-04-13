@@ -50,7 +50,7 @@ export default class VEmojiPicker extends Vue {
   @Prop({ default: () => emojisDefault }) customEmojis!: IEmoji[];
   @Prop({ default: () => categoriesDefault }) customCategories!: ICategory[];
   @Prop({ default: 15 }) limitFrequently!: number;
-  @Prop({ default: 7 }) emojisByRow!: number;
+  @Prop({ default: 5 }) emojisByRow!: number;
   @Prop({ default: 4 }) stickersByRow!: number;
   @Prop({ default: false }) continuousList!: boolean;
   @Prop({ default: 32 }) emojiSize!: number;

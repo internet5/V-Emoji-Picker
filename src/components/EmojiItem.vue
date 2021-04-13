@@ -1,13 +1,11 @@
+
 <template>
-  <div v-if="isAemoji" :class="['emoji', { 'border': withBorder } ]" :style="styleSize" v-html="aemoji(emoji.data)"></div>
-  <span v-else :class="['emoji', { 'border': withBorder } ]" :style="styleSize" v-html="emoji.data" />
+  <span :class="['emoji', { 'border': withBorder } ]" :style="styleSize" v-html="emoji.data" />
 </template>
 
 <script lang="ts">
-import {Component, Prop, Vue} from "vue-property-decorator";
-import {IEmoji} from "@/models/Emoji";
-// import '../aemoji-path.js';
-import unifiedToHTML from "aemoji";
+import { Component, Prop, Vue } from "vue-property-decorator";
+import { IEmoji } from "@/models/Emoji";
 
 @Component({})
 export default class EmojiItem extends Vue {
@@ -23,23 +21,12 @@ export default class EmojiItem extends Vue {
       width: `${this.size}px`
     };
   }
-
-  isAemoji(){
-    return window.hasOwnProperty('__aemoji_url__');
-  }
-
-  aemoji(data){
-    if(this.isAemoji()){
-      return unifiedToHTML(data);
-    }else {
-      return data;
-    }
-  }
 }
 </script>
 
 <style lang="scss" scoped>
 .emoji {
+  display: inline-block;
   text-align: center;
   padding: 3px;
   box-sizing: content-box;
@@ -47,9 +34,6 @@ export default class EmojiItem extends Vue {
   transition: transform 0.2s;
 
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   &:hover {
     transform: scale(1.05);
