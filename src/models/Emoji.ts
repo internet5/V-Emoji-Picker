@@ -14,3 +14,9 @@ export class Emoji implements IEmoji {
     public aliases: string[]
   ) { }
 }
+
+declare global {
+  interface Window {
+    __twemoji_base_url__:any
+  }
+}
