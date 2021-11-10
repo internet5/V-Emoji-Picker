@@ -47,8 +47,8 @@ import locale from "./locale";
   }
 })
 export default class VEmojiPicker extends Vue {
-  @Prop({ default: () => emojisDefault }) customEmojis!: IEmoji[];
-  @Prop({ default: () => categoriesDefault }) customCategories!: ICategory[];
+  @Prop({ default: () => [] }) customEmojis!: IEmoji[];
+  @Prop({ default: () => [] }) customCategories!: ICategory[];
   @Prop({ default: 15 }) limitFrequently!: number;
   @Prop({ default: 5 }) emojisByRow!: number;
   @Prop({ default: 4 }) stickersByRow!: number;
